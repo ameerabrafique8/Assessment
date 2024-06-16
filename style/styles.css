@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5F5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+
+.intervention {
+    width: 100%;    
+    height:650px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/images/Group\ 54.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mockup-screen {
+    width: 1440px;
+}
+
+.nav-div {
+    width: 92%;
+    height: 50px;
+    margin-bottom: 60px;
+}
+.navbar {
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 19.5px;
+    padding-left: 120px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color:burlywood;
+    padding: 1px;
+}
+
+.nav-items {
+    .item1 {
+        padding-right: 17px;
+        margin-right: -8px;
+    }
+    .item2 {
+        margin-right: -6px;
+    }
+    .item3 {
+        margin-right: 12px;
+    }
+    .item4 {
+        margin-right: 21px;
+        margin-left: -20px;
+    }
+}
+
+.nav-items a {
+    color: white;
+    font-size: 14px;
+    padding: 15px 17px;
+}
+
+.nav-items .nav-link:focus {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 5px 18px ;
+    font-weight: 700;
+
+    margin-right: 11px;
+    margin-left: -11px;
+    margin-top: 2px;
+
+    .item5{
+        font-weight: 700;
+        font-family: Montserrat !important;
+    }
+    .contact-span {
+        /* font-weight: 700; */
+        color: #491cde;
+        background-color: rgb(232, 236, 11);
+
+    }
+}
+
+
+
+/* Intervention Body and Form */
+
+.intervention-body {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.intervented-div {
+    width: 610px;
+    height: 264px;
+    margin-left: 119px;
+    margin-top: 93px;
+}
+.heading {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+.outlined-text{
+    display: block;
+    color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 1px white;
+}
+.filled-text {
+    display: block;
+    margin-top: -84px;
+}
+.description {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 3px;
+}
+
+/* FORM Styling */
+.form-div {
+    border-radius: 12px;
+}
+
+.form-wrap {
+    width: 472px;
+    height: 449px;
+    background: linear-gradient(180deg, #2A7D6C 0%, rgba(62, 105, 96, 0.62) 100%);
+	padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.13px;
+}
+
+.form-group {
+	position: relative;
+	margin: 20px 0;
+}
+
+.form-group label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	font-size: 16px;
+	color: #FFFFFFB2;
+	padding: 0 5px;
+	transition: 0.2s;
+	pointer-events: none;
+}
+
+.form-group input {
+    color: #ffffff;
+	width: 200px;
+	height: 48px;
+	font-size: 16px;
+	padding: 0 15px;
+    background-color: transparent;
+	border: 1px solid #FFFFFFB2;
+    border-radius: 2px;
+    outline: none;
+    caret-color: #ffffff;
+}
+
+.form-group input:focus {
+    border-color: #fff; /* Change border color to white on focus */
+    box-shadow: none; /* Remove any existing box-shadow */
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+	top: 0;
+    color:#ffffff;
+	font-size: 13px;
+	background-color: #2A7D6C;
+}
+
+/* .form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group input:valid ~ label {
+    top: -10px;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #2A7D6C;
+} */
+
+.form-fields {
+    display: flex;
+    gap: 10px; 
+}
+
+.submit-btn-div {
+    width: 221px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    background-color: #5BC8AF;
+    border-radius: 4px;
+}
+
+.send-img {
+    width: 24px;
+    height: 24px;
+}
+
+.submit-button {
+    /* width: 221px;
+    height: 56px; */
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #5BC8AF; 
+    color: #FFFFFF; 
+    border: none; /* No border */
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+/* Select Floating Label */
+
+.did-floating-label-content { 
+    position:relative; 
+    width: 416px;
+    height: 48px;
+    margin-bottom:20px; 
+  }
+
+  .did-floating-label {
+    color:#FFFFFFB2; 
+    font-size:16px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:15px;
+    top:11px;
+    padding:0 5px;
+    background: transparent;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .did-floating-input, .did-floating-select {
+    font-size:16px;
+    display:flex;
+    text-align: left;
+    width:100%;
+    height:48px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #FFFFFFB2;
+    border: 1px solid #FFFFFFB2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    &:focus{
+      outline:none;
+      ~ .did-floating-label{
+        top:-8px;
+        font-size:13px;
+        /* top: 0; */
+        
+      }
+    }
+  }
+
+  .did-floating-select:focus ~ .did-floating-label,
+  .did-floating-select:not(:placeholder-shown) ~ .did-floating-label,
+  .did-floating-select option:checked ~ .did-floating-label {
+      top: -8px;
+      font-size: 13px;
+      background-color: #2A7D6C;
+      color: #fff;
+      padding: 0 5px;
+  }
+
+  
+  select.did-floating-select {
+    /* -webkit-appearance: none;
+      -moz-appearance: none; */
+      /* appearance: none; */
+  }
+  select.did-floating-select::-ms-expand {
+    display: none;
+  }
+
+  select.did-floating-select option {
+    background-color: #2A7D6C; 
+    color: #FFFFFFB2; 
+  }
+
+  
+  .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
+    top:-8px;
+    font-size:16px;
+  }
+  .did-floating-select:not([value=""]):valid ~ .did-floating-label {
+    top:-8px;
+    font-size:16px;
+  }
+  .did-floating-select[value=""]:focus ~ .did-floating-label {
+    top:15px;
+    left: 10px;
+    font-size:16px;
+  }

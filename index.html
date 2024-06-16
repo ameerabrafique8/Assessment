@@ -4,54 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Intervention</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/collage-styles.css">
 </head>
 <body>
 
     <div class="intervention">
-        <!-- <nav class="navbar">  
-            <div class="logo">
-                <img src="./images/Vector.png"/>
+       <div class="mockup-screen">
+        <div class="nav-div">
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="./images/Vector.png"/>
+                </div>
+            
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <div class="nav-items">
+                        <a href="#" class="nav-link item1",>HOME</a>
+                        <a href="#" class="nav-link item2">ABOUT</a>
+                        <a href="#" class="nav-link item3">CONTACT</a>
+                        <a href="#" class="item4">|</a>
+                    </div>
+                    <div class="contact ">
+                        <span class="item5">CALL NOW FOR A CONSULT </span> <span class="contact-span"> 123.456.7890</span>
+                    </div>
+                </div>
+            </nav>
+       </div>
+         <!-- Description and FORM -->
+        <div class="intervention-body">
+            <div class="intervented-div">
+                <div class="heading"><span class="outlined-text">GET AN </span><br><span class="filled-text">INTERVENTION</span></div>
+                <div class="description">
+                    Showing greater respect to older adults can be done in several ways : <br>
+                    acknowledging and putting to use the talents and skills of older adults; creating <br>
+                    intergenerational initiatives; and allowing older adults to stay active and independent <br>
+                    for as long as possible.
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="form-div">
+                <form action="" class="form-wrap">
+                    <div class="contact-us">Contact Us</div>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" name="firstName" id="fname" required />
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" id="lname" required />
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                    <!-- ................. -->
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" name="email" id="bemail" required />
+                            <label for="bemail">Business Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" id="company" required />
+                            <label for="company">Company</label>
+                        </div>
+                    </div>
+                    <!-- ....................... -->
+                   
+                      <div class="did-floating-label-content">
+                        <select class="did-floating-select" onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="">
+                          <option value=""></option>
+                          <option value="1">Alabama</option>
+                          <option value="2">Boston</option>
+                          <option value="3">Ohaio</option>
+                          <option value="4">New York</option>
+                          <option value="5">Washington</option>
+                        </select>
+                        <label class="did-floating-label">Country</label>
+                      </div>
+                    <!-- ----------------------- -->
+                    <div class="submit-btn-div">    
+                        <button type="submit" class="submit-button">
+                            <img src="./images/mdi_send.png" class="send-img">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- COLLAGE Area  -->
+        <div class="collage-area">
+            <div class="group-images">
+                <img src="./images/Mask Group.png">
+                <img src="./images/Mask Group1.png">
+                <img src="./images/Mask Group2.png">
             </div>
             <div>
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#services">CONTACT</a>
-                <a href="#contact">|</a>
-                <div class="contact">
-                    <span>CALL NOW FOR A CONSULT</span>123.456.7890
+                <div class="collage-text">
+                    <div><span class="outlined">WE </span>UNDERSTAND</div>
+                    <div class="collage-border"></div>
+                </div>
+                <div class="collage-description">
+                    <div class="description-area1">
+                        Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age. Engaging them in leisure activities and volunteer work is important.
+                    </div>
+                    <div class="description-area2">
+                        Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
+                    </div>
+                    <div class="description-area3">
+                        <div class="area3-text">
+                            To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
+                        </div>
+                        <div class="area3-btn">
+                            <button class="btn">92% Success Rate <img src="./images/Arrow (Stroke).png" class="arrow"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </nav> -->
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="./images/Vector.png"/>
-            </div>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-        
-                <div class="nav-items">
-                    <a href="/">HOME</a>
-                    <a href="/">ABOUT</a>
-                    <a href="/">CONTACT</a>
-                    <a href="/">|</a>
-                    <!-- <a href="/"><span>CALL NOW FOR A CONSULT</span>123.456.7890</a></li> -->
-                </div>
-                <div>
-                    <span>CALL NOW FOR A CONSULT</span>123.456.7890
-                </div>
-                
-        
-              </div>
-            <!-- </ul> -->
-          </nav>
-
+        </div>
+       </div>
     </div>
-
-    
+   
     
 
     </body>
