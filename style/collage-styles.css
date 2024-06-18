@@ -2,10 +2,10 @@
     /* background-color: blueviolet; */
     height: 700px;
     font-family: 'Montserrat';
-    padding: 79px 128px 0 128px;
+    padding: 78px 127px 0px 130px;
     margin-top: 71px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 
     .group-images {
         display: flex;
@@ -84,3 +84,206 @@
         }
     }
 }
+
+
+/* Slider style */
+
+ .slide-container{
+    max-width: 1175px;
+    width: 100%;
+    padding: 40px 0;
+    height: 434px;
+    margin-top: -112px;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    height: 400px;
+    background-color: transparent;
+  }
+
+  /* -------------------------- */
+  .harvey {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 28px;
+    background-color: transparent;
+  }
+  .harvey-head {
+    background-color: #194D44;
+    width: 675px;
+    height: 269px;
+    margin-top: 21px;
+    margin-left: 6px;
+    padding-left: 67px;
+    margin-right: 58px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .harvey-body {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6px;
+    margin-left: 2px;
+  }
+  .harvey-text {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-top: 60px;
+    margin-left: -3px;
+    margin-bottom: 15px;
+  }
+
+  .harvey-img {
+    margin-top: 39px;
+    margin-right: 58px;
+  }
+  .harvey-description {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    padding-right: 69px;
+    margin-left: -1px;
+  }
+  /* -------------------------- */
+  .card{  
+    border-radius: 25px;
+    /* background-color: #e31212; */
+  }
+  .card-img {
+    margin-left: 29px;
+    margin-top: 20px;
+    margin-right: 31px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    
+    background-color: yellow;
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  /* .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  } */
+  /* .card-image{
+    position: relative;
+    height: 269px;
+    width: 269px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  } */
+  /* .card-image .card-img{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+  } */
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  
+  .swiper-navBtn{
+    color: #EAEAEA;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #5BC8AF;
+  }
+  
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+
+  .swiper-navBtn:hover, .swiper-navBtn:hover {
+    color: #5BC8AF !important; /* Hover color of the navigation buttons */
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    color: #EAEAEA !important;
+    width: calc(var(--swiper-navigation-size) / 46* 21) !important;
+  }
+
+  .swiper-button-prev:active, .swiper-button-next:active {
+    color: #5BC8AF !important; /* Active color of the navigation buttons */
+  }
+  /* .swiper-pagination{
+    background-color: orange;
+  } */
+
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+    height: 16px;
+    width: 16px; 
+    background-color: #EAEAEA;
+    margin: -8px 16px !important; 
+    opacity: 1;
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet:hover {
+    background-color: #5BC8AF;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #5BC8AF !important; 
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  } 
+
+
+  

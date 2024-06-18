@@ -5,130 +5,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Intervention</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="
+        https://cdn.jsdelivr.net/npm/pstpn-webfont-montserrat@0.0.5/montserrat.min.css
+        " rel="stylesheet"> -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="./style/collage-styles.css">
+    <link rel="stylesheet" href="./style/organize-styles.css">
+    <link rel="stylesheet" href="./style/video-styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(fonts/stylesheet.css);
+        }
+    </style>
 </head>
 <body>
 
     <div class="intervention">
        <div class="mockup-screen">
-        <div class="nav-div">
-            <nav class="navbar">
-                <!-- LOGO -->
-                <div class="logo">
-                    <img src="./images/Vector.png"/>
-                </div>
-            
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <div class="nav-items">
-                        <a href="#" class="nav-link item1",>HOME</a>
-                        <a href="#" class="nav-link item2">ABOUT</a>
-                        <a href="#" class="nav-link item3">CONTACT</a>
-                        <a href="#" class="item4">|</a>
+            <div class="nav-div">
+                <nav class="navbar">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="./images/Vector.png"/>
                     </div>
-                    <div class="contact ">
-                        <span class="item5">CALL NOW FOR A CONSULT </span> <span class="contact-span"> 123.456.7890</span>
+                
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <div class="nav-items">
+                            <a href="#" class="nav-link item1",>HOME</a>
+                            <a href="#" class="nav-link item2">ABOUT</a>
+                            <a href="#" class="nav-link item3">CONTACT</a>
+                            <a href="#" class="item4">|</a>
+                        </div>
+                        <div class="contact ">
+                            <span class="item5">CALL NOW FOR A CONSULT </span> <span class="contact-span"> 123.456.7890</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Description and FORM -->
+            <div class="intervention-body">
+                <div class="intervented-div">
+                    <div class="heading"><span class="outlined-text">GET AN </span><br><span class="filled-text">INTERVENTION</span></div>
+                    <div class="description">
+                        Showing greater respect to older adults can be done in several ways : <br>
+                        acknowledging and putting to use the talents and skills of older adults; creating <br>
+                        intergenerational initiatives; and allowing older adults to stay active and independent <br>
+                        for as long as possible.
                     </div>
                 </div>
-            </nav>
-       </div>
-         <!-- Description and FORM -->
-        <div class="intervention-body">
-            <div class="intervented-div">
-                <div class="heading"><span class="outlined-text">GET AN </span><br><span class="filled-text">INTERVENTION</span></div>
-                <div class="description">
-                    Showing greater respect to older adults can be done in several ways : <br>
-                    acknowledging and putting to use the talents and skills of older adults; creating <br>
-                    intergenerational initiatives; and allowing older adults to stay active and independent <br>
-                    for as long as possible.
+                <!-- Form -->
+                <div class="form-div">
+                    <form action="" class="form-wrap">
+                        <div class="contact-us">Contact Us</div>
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <input type="text" name="firstName" id="fname" required />
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastName" id="lname" required />
+                                <label for="lname">Last Name</label>
+                            </div>
+                        </div>
+                        <!-- ................. -->
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <input type="text" name="email" id="bemail" required />
+                                <label for="bemail">Business Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="company" id="company" required />
+                                <label for="company">Company</label>
+                            </div>
+                        </div>
+                        <!-- ....................... -->
+                    
+                        <div class="did-floating-label-content">
+                            <select class="did-floating-select" onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="">
+                            <option value=""></option>
+                            <option value="1">Alabama</option>
+                            <option value="2">Boston</option>
+                            <option value="3">Ohaio</option>
+                            <option value="4">New York</option>
+                            <option value="5">Washington</option>
+                            </select>
+                            <label class="did-floating-label">Country</label>
+                        </div>
+                        <!-- ----------------------- -->
+                        <div class="submit-btn-div">    
+                            <button type="submit" class="submit-button">
+                                <img src="./images/mdi_send.png" class="send-img">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!-- Form -->
-            <div class="form-div">
-                <form action="" class="form-wrap">
-                    <div class="contact-us">Contact Us</div>
-                    <div class="form-fields">
-                        <div class="form-group">
-                            <input type="text" name="firstName" id="fname" required />
-                            <label for="fname">First Name</label>
+
+            <!-- COLLAGE Area  -->
+            <div class="collage-area">
+                <div class="group-images">
+                    <img src="./images/Mask Group.png">
+                    <img src="./images/Mask Group1.png">
+                    <img src="./images/Mask Group2.png">
+                </div>
+                <div>
+                    <div class="collage-text">
+                        <div><span class="outlined">WE </span>UNDERSTAND</div>
+                        <div class="collage-border"></div>
+                    </div>
+                    <div class="collage-description">
+                        <div class="description-area1">
+                            Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age. Engaging them in leisure activities and volunteer work is important.
                         </div>
-                        <div class="form-group">
-                            <input type="text" name="lastName" id="lname" required />
-                            <label for="lname">Last Name</label>
+                        <div class="description-area2">
+                            Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
+                        </div>
+                        <div class="description-area3">
+                            <div class="area3-text">
+                                To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
+                            </div>
+                            <div class="area3-btn">
+                                <button class="btn">92% Success Rate <img src="./images/Arrow (Stroke).png" class="arrow"></button>
+                            </div>
                         </div>
                     </div>
-                    <!-- ................. -->
-                    <div class="form-fields">
-                        <div class="form-group">
-                            <input type="text" name="email" id="bemail" required />
-                            <label for="bemail">Business Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="company" id="company" required />
-                            <label for="company">Company</label>
-                        </div>
-                    </div>
-                    <!-- ....................... -->
-                   
-                      <div class="did-floating-label-content">
-                        <select class="did-floating-select" onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="">
-                          <option value=""></option>
-                          <option value="1">Alabama</option>
-                          <option value="2">Boston</option>
-                          <option value="3">Ohaio</option>
-                          <option value="4">New York</option>
-                          <option value="5">Washington</option>
-                        </select>
-                        <label class="did-floating-label">Country</label>
-                      </div>
-                    <!-- ----------------------- -->
-                    <div class="submit-btn-div">    
-                        <button type="submit" class="submit-button">
-                            <img src="./images/mdi_send.png" class="send-img">
-                            Submit
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
+
+            <!-- SLIDER -->
+
+             <div class="slide-container swiper">  
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        
+                        <div class="card swiper-slide">
+                            <div class="harvey">
+                                <div>
+                                    <img src="/images/slider-harvey.png" alt="">
+                                </div>
+                                <div class="harvey-head">
+                                    <div class="harvey-body">
+                                        <div class="harvey-text">Abbie Harvey</div>
+                                        <div class="harvey-img">
+                                            <img src="/images/“.png">
+                                        </div>
+                                    </div>
+                                    <div class="harvey-description">
+                                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="harvey">
+                                <div>
+                                    <img src="/images/slider-2.png" alt="" class="card-img">
+                                </div>
+                                <div class="harvey-head">
+                                    <div class="harvey-body">
+                                        <div class="harvey-text">Abbie Harvey</div>
+                                        <div class="harvey-img">
+                                            <img src="/images/“.png">
+                                        </div>
+                                    </div>
+                                    <div class="harvey-description">
+                                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="harvey">
+                                <div>
+                                    <img src="/images/slider-3.png" alt="" class="card-img">
+                                </div>
+                                <div class="harvey-head">
+                                    <div class="harvey-body">
+                                        <div class="harvey-text">Abbie Harvey</div>
+                                        <div class="harvey-img">
+                                            <img src="/images/“.png">
+                                        </div>
+                                    </div>
+                                    <div class="harvey-description">
+                                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>  
         </div>
 
-        <!-- COLLAGE Area  -->
-        <div class="collage-area">
-            <div class="group-images">
-                <img src="./images/Mask Group.png">
-                <img src="./images/Mask Group1.png">
-                <img src="./images/Mask Group2.png">
-            </div>
-            <div>
-                <div class="collage-text">
-                    <div><span class="outlined">WE </span>UNDERSTAND</div>
-                    <div class="collage-border"></div>
-                </div>
-                <div class="collage-description">
-                    <div class="description-area1">
-                        Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age. Engaging them in leisure activities and volunteer work is important.
-                    </div>
-                    <div class="description-area2">
-                        Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
-                    </div>
-                    <div class="description-area3">
-                        <div class="area3-text">
-                            To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
-                        </div>
-                        <div class="area3-btn">
-                            <button class="btn">92% Success Rate <img src="./images/Arrow (Stroke).png" class="arrow"></button>
-                        </div>
+        <!-- Organize area -->
+            
+        <div class="organize-area">
+            <div class="organize-mockup-area">
+                <div>
+                    <div class="organize-heading">
+                        <span class="outlined">WE</span>
+                        <span class="filled">CAN ORGANIZE EVERYTHING</span>
                     </div>
                 </div>
+                
+                <div class="organize-description">
+                    <div class="description1">
+                        <span class="desc-span">Interventions</span> should focus on older adult’s desire for connectedness, participation and independence.
+                    </div>
+                    <!-- <div> -->
+                        <div class="description2">
+                            Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+                        </div>
+                        <div class="description3">
+                            The methodology framework proposed by Arskey and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings.
+                        </div>
+                    <!-- </div> -->
+                </div>
+    
+    
+                <div class="container">
+                    <div class="item ">Needs Assessment</div>
+                    <div class="item ">Treatment Planning & <br>Placement</div>
+                    <div class="item ">Transportation & Logistics</div>
+                    <div class="item ">
+                        <div class="item4 ">
+                            <!-- <div class="item4-text"> -->
+                                <!-- Insurance Advocacy -->
+                            <!-- </div> -->
+                            
+                            
+                            <!-- <span id="tooltipText">hello heello hehvbkszcbxn </span> -->
+                            <div class="tooltip">
+                                <div class="img-text">
+                                    Insurance Advocacy
+                                    <img src="/images/mdi_info.png" class="item4-img ">
+                                </div>
+                                <span class="tooltiptext">
+                                    We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                                </span>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="item item5">Employment Advocacy</div>
+                    <div class="item item6">Aftercare Planning</div>
+                </div>
             </div>
+              
         </div>
-       </div>
+         <!-- Watch the video -->
+         <div class="video-area">
+            <div class="detail-area">
+                <div class="detail">
+                    <div class="detail-heading">WATCH THE VIDEO</div>
+                    <div class="inner-detail">
+                        <div class="detail1">
+                            <img src="/images/Checkmark.png" class="check-img">
+                            <span class="span-class">Needs Assessment</span>
+                        </div>
+                        <div class="inner">
+                            The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program.
+                        </div>
+                    </div> 
+
+                    <div class="inner-detail">
+                        <div class="detail2">
+                            <img src="/images/Checkmark.png" class="check-img">
+                            <span class="span-class">Insurance Advocacy</span>
+                        </div>
+                        <div class="inner">
+                            We are committed to advocating for appropriate coverage and payment policies. 
+                        </div>
+                    </div> 
+
+                    <div class="inner-detail">
+                        <div class="detail3">
+                            <img src="/images/Checkmark.png" class="check-img">
+                            <span class="span-class">Treatment Planning & Placement</span>
+                        </div>
+                        <div class="inner">
+                            Patients can better understand medical procedures, discharge instructions, etc.                        
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="video-side">
+                <div class="video-container" id="videoContainer">
+                    <img src="/images/1440-VerticalNew- 747 width.png" class="left-image">
+                   
+                    <button class="play-button" id="playButton" onclick="playPause()">
+                        <!-- <img src="/images/Group 44 (1).svg"> -->
+                        <img src="/images/Group 44.svg">
+                    </button>
+                    <div class="video-logo box">
+                        
+                            <img src="/images/Vector.png">
+                       
+                    </div>
+                </div>
+
+
+                 <!-- Popup structure -->
+                <div id="popup-box" class="modal">
+                    <div class="content">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                    <!-- <a href="" class="close-button">&times;</a> -->
+                    <span class="close-button">&times;</span>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
     </div>
    
     
 
     </body>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
 </html>

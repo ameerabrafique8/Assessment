@@ -1,0 +1,213 @@
+.organize-area {
+    /* height: 1000px; */
+
+
+    /* https://codepen.io/a7rarpress/pen/ExdvjBx */
+
+    /* select floating */
+    /* https://codepen.io/devesh8/pen/MWYEJEP */
+
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    top: -238px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+    .organize-mockup-area {
+        width: 1200px;
+        margin-top: 335px;
+        margin-left: 2px;
+        margin-bottom: 108px;
+
+        .organize-heading {
+            color: #333333;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            margin-bottom: 30px;
+            margin-top: -1px;
+            margin-left: -2px;
+            padding-left: 8px;
+
+            .outlined {
+                color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                -webkit-text-stroke: 1px #333333;
+            }
+
+            .filled {
+                padding-right: 2px;
+            }
+        }
+
+        .organize-description {
+            color: #333333;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 8px;
+            margin-bottom: 40px;
+
+            .description1 {
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 'Montserrat';
+                font-style: italic;
+                line-height: 28px;
+                
+
+                .desc-span {
+                    font-weight: 800;
+                    /* margin-right: 2px; */
+                }
+            }
+
+            .description2 {
+                margin-right: 2px;
+                padding-left: 2px;
+
+            }
+
+            .description3 {
+                margin-right: 6px;
+            }
+
+            .description1, .description2, .description3 {
+                width: 371px;
+            }
+
+            .description2, .description3 {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: 'Montserrat';
+            }
+        }
+       
+    }
+}
+
+
+.container {
+    width: 1184px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+   
+  }
+  
+  .item {
+    color: #333333;
+    width: 371px;
+    height: 96px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    line-height: 28px;
+
+    border-radius: 4px;
+    border: 2px solid #5BC8AF;
+    flex: 1 0 30%; /* 3 items per row by default (above 960px) */
+
+    /* box-sizing: border-box; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item4 {
+    color: #333333;
+    width: 271px;
+    width: 230px;
+    display: flex;
+    margin-left: 31px;
+    justify-content: space-between;
+    /* position: relative; */
+
+  }
+
+  .img-text {
+    width: 238px;
+    margin-left: -4px;
+    padding-right: 2px;
+  }
+
+  .item4-img {
+    margin-bottom: -6px;
+    width: 24px;
+    height: 24px;
+  }
+  /* ---------------------------------- */
+ 
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /* margin-bottom: 7px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tooltip .tooltiptext {
+    /* visibility: hidden; */
+    width: 300px;
+    height: 86px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    line-height: 20px;
+    background-color: #297C6B;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 13px 24px 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 247%;
+    left: 4%;
+    right: -12%;
+    margin-left: -60px;
+
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #297C6B transparent;
+  }
+
+  .tooltip:hover {
+    color: #5BC8AF; 
+  }
+  
+  .tooltip:hover .tooltiptext  {
+    visibility: visible;
+  }
+
+  /* ---------------------------------- */
+  @media (max-width: 960px) {
+    .item {
+      flex-basis: 50%; /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .item {
+      flex-basis: 100%; /* 1 item per row */
+    }
+  }
+  
